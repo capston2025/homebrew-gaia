@@ -7,7 +7,7 @@ class Gaia < Formula
   homepage "https://github.com/capston2025/capston"
   url "https://github.com/capston2025/capston/archive/refs/heads/main.tar.gz"
   version "0.1.0"
-  sha256 "82c89dcf9bf6fc06c2ca6beb56ffdc99751db486f97372776b19c5236b4031aa"
+  sha256 "23df20737d102e5353a77857106d20529dbcd05c0ec767affbd601e15c67953a"
 
   license "MIT"
 
