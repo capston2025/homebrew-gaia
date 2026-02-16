@@ -13,10 +13,12 @@ class Gaia < Formula
 
   depends_on "python@3.12"
 
-def install
-  venv = virtualenv_create(libexec, Formula["python@3.12"].opt_bin/"python3.12")
-  venv.pip_install_and_link Pathname.pwd
-end
+  def install
+    venv = virtualenv_create(libexec, Formula["python@3.12"].opt_bin/"python3.12")
+    python = Formula["python@3.12"].opt_bin/"python3.12"
+    system python, "-m", "pip", "install", "--verbose", "--no-cache-dir", "--python=#{venv.root}/bin/python", "."
+    bin.install_symlink venv.root/"bin/gaia"
+  end
 
 
   test do
