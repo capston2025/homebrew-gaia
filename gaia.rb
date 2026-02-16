@@ -5,12 +5,8 @@ class Gaia < Formula
 
   desc "Goal-oriented Autonomous Intelligence for Adaptive GUI Testing"
   homepage "https://github.com/capston2025/capston"
-  url "https://github.com/capston2025/capston/archive/refs/heads/main.tar.gz"
-  # NOTE: tag a release and replace this with the tag tarball + real sha256.
-  # Example:
-  # url "https://github.com/capston2025/capston/archive/refs/tags/v0.1.0.tar.gz"
-  version "0.1.0"
-  sha256 :no_check
+  url "https://github.com/capston2025/capston/archive/refs/tags/v0.1.0.tar.gz"
+  sha256 "82c89dcf9bf6fc06c2ca6beb56ffdc99751db486f97372776b19c5236b4031aa"
   license "MIT"
 
   depends_on "python@3.12"
