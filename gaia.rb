@@ -15,8 +15,7 @@ class Gaia < Formula
 
   def install
     venv = virtualenv_create(libexec, Formula["python@3.12"].opt_bin/"python3.12")
-    python = Formula["python@3.12"].opt_bin/"python3.12"
-    system python, "-m", "pip", "install", "--verbose", "--no-cache-dir", "--python=#{venv.root}/bin/python", "."
+    system venv.root/"bin/python", "-m", "pip", "install", "--verbose", "--no-cache-dir", "."
     bin.install_symlink venv.root/"bin/gaia"
   end
 
